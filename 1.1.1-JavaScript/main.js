@@ -1,2 +1,5 @@
-let userName = prompt("Pon tu nombre"); 
-console.log("Hola " + userName + "!");
+let numero = 5;
+
+console.log(numero > 5);
+
+numero = 5;

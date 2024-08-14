@@ -70,3 +70,4 @@ if (usuarioVacuna > 17 && usuarioVacuna <= 30){
 }else{
     console.log("No te puedes vacunar");
 } 
+

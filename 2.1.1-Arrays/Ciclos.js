@@ -1,15 +1,49 @@
-let respuestaUsuario1 = prompt("Dame un color").toUpperCase();
-let respuestaUsuario2 = prompt("Ahora dame otro color").toUpperCase();
+/* let i = 0;
+let arr = [];
 
-
-while(respuestaUsuario1 === "" || respuestaUsuario2 === ""){
-    respuestaUsuario1 = prompt("Dame un color").toUpperCase();
-    respuestaUsuario2 = prompt("Ahora dame otro color").toUpperCase();
-    if(respuestaUsuario1 === respuestaUsuario2){
-        console.log("Tus colores son igules")
-    } else {
-        console.log("Tus colores son diferentes")
-    }
+while(i <= 100){
+    console.log(i);
+    i++;
 }
 
-console.log("Terminó el ciclo");
+console.log(arr);
+*/
+
+/* let numero = parseInt(prompt("Dame un número"));
+
+while(numero < 30){
+    numero += parseInt(prompt("Dame otro número"));
+    console.log(numero);
+} */
+
+
+/* let numero = 0;
+
+do{
+    numero += parseInt(prompt("Dame un número"));
+    console.log(numero);
+}while(numero < 30); */
+
+let pasatiempos = "Videojuegos Gym Guitarra Peliculas Programar Musica Dormir Estudiar";
+let arregloPasatiempos = pasatiempos.split(" ");
+console.log(arregloPasatiempos);
+
+for(let i = 0; i < arregloPasatiempos.length; i++){
+    console.log(arregloPasatiempos[i]);
+    console.log(i);
+    
+}
+
+
+let arr = ["Azul", "Rojo", "Amarillo", "Vino", "Verde", "Negro", "Blanco"];
+console.log(arr);
+for (let i=0; i < arr.length; i++){
+    
+    console.log(arr[i]);
+}
+
+let contador = 0;
+for (let index = 0; index <= 4; index++){
+    contador = contador + index;
+    console.log(contador);
+}

@@ -5,6 +5,9 @@ let personas = [
         esMayorDeEdad: true,
         pasatiempos: ["Videojuegos", "Gym", "Guitarra", "Peliculas", "Programar"],
         estudios: "",
+        saludo: function(nombre){
+            console.log(`Holaaa ${nombre}`);
+        },
     },
     {
         nombre: "Ana",
@@ -12,6 +15,9 @@ let personas = [
         esMayorDeEdad: true,
         pasatiempos: ["Videojuegos", "Gym", "Guitarra", "Peliculas", "Programar"],
         estudios: "Licenciatura",
+        saludo: function(nombre){
+            console.log(`Holaaa ${nombre}`);
+        },
     }
 ]
 

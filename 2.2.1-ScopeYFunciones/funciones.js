@@ -8,8 +8,9 @@ function saludo (nombre) {
     console.log('Holaaa ' + nombre);
 }
 
-let nombre = prompt("Dime tu nombre");
+//let nombre = prompt("Dime tu nombre");
 
-saludo(nombre);
+//saludo(nombre);
 
 
+console.log(suma(5,8));

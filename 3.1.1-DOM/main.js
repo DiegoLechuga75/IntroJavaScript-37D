@@ -9,6 +9,17 @@ let login = document.querySelector("#login");
 
 console.log(div);
 
+const registredUsers = [
+    {
+        username: "a@gmail.com",
+        password: "123",
+    },
+    {
+        username: "diego@gmail.com",
+        password: "321",
+    },
+]
+
 const btnHandler = function(){
     let text = prompt("Dame una frase");
     let title = document.querySelector("#main-title");
@@ -39,14 +50,24 @@ const toggleImage = () => {
     }
 }
 
+const verifyLogin = (username, password) => {
+    for(let i = 0; i < registredUsers.length; i++){
+        if(username === registredUsers[i].username && password === registredUsers[i].password){
+            return `Bienvenido ${username}`;
+        }
+    }
+    return "El usuario o contraseña son incorrectos";
+}
+
 const formHandler = (event) => {
     event.preventDefault();
     let username = document.querySelector("#username");
     let password = document.querySelector("#password");
-    console.log(username, password);
+    let messageDiv = document.querySelector("#login-message");
+    messageDiv.innerHTML = `<h1>${verifyLogin(username.value, password.value)}</h1>`
 }
 
-plusBtn.addEventListener("click", () => btnAdding());
+plusBtn.addEventListener("click", (e) => btnAdding(e));
 minusBtn.addEventListener("click", () => btnSubstracting());
 
 toggleBtn.addEventListener("click", () => toggleImage());
